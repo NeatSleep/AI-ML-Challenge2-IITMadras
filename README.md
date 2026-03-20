@@ -25,7 +25,7 @@ Given historical weather observations from **three geographically distributed st
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Exploratory Data Analysis
 - Visualised feature distributions using **histograms with KDE** (Seaborn) for temperature and precipitation across all three stations
