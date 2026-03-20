@@ -1,18 +1,18 @@
 # AI-ML-Challenge2-IITMadras
-# 🌡️ Multi-Station Weather Temperature Prediction
+# Multi-Station Weather Temperature Prediction
 
 > **Shaastra Techathon AI/ML Challenge 2** — IIT Madras  
 > Predicting average temperature (TAVG) from multi-station meteorological data using ensemble learning.
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Given historical weather observations from **three geographically distributed stations (A, B, C)**, predict the **composite average temperature (TAVG)** for a target date. Each station records precipitation, snow depth, maximum temperature, minimum temperature, and average temperature — resulting in a 15-feature input space.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 | Split | Samples | Source |
 |-------|---------|--------|
@@ -90,7 +90,7 @@ param_grid = {
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 ```
 Python 3.10          pandas · numpy · matplotlib · seaborn
@@ -102,7 +102,7 @@ Kaggle Notebooks     Execution environment
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── notebook.ipynb          # Full pipeline: EDA → preprocessing → modelling → submission
@@ -112,7 +112,7 @@ Kaggle Notebooks     Execution environment
 
 ---
 
-## 🚀 How to Reproduce
+## How to Reproduce
 
 1. **Clone / open** the notebook in a Kaggle environment with the `shaastra-techathon-ai-ml-challenge-2` dataset attached.
 
@@ -129,13 +129,13 @@ Kaggle Notebooks     Execution environment
 
 ---
 
-## 📊 Results
+## Results
 
 The tuned **Random Forest Regressor** achieved an **R² of 0.798** on the hold-out test split, explaining ~80% of variance in composite average temperature. Residuals followed a near-normal distribution, indicating well-calibrated predictions with no systematic bias.
 
 ---
 
-## 💡 Key Learnings & Future Improvements
+## Key Learnings & Future Improvements
 
 - **Temporal features** (month, season encoding) were dropped due to no visible trend but could improve generalisation with a larger dataset
 - **Station-level averaging** of TAVG features dominated importance — a weighted ensemble of per-station sub-models could be explored
@@ -144,7 +144,7 @@ The tuned **Random Forest Regressor** achieved an **R² of 0.798** on the hold-o
 
 ---
 
-## 👤 Author
+## Author
 
 **Debaditya** 
 
